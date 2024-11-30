@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font for elegance */
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('Images/background.jpg') center/cover no-repeat; /* Gradient overlay */
+                
+}
+
+/* Login Section Styling */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em;
+}
+
+/* Logo Styling */
+.logo {
+    text-align: center;
+    margin-bottom: 2em; /* Space between logo and form */
+}
+
+.logo img {
+    height: 250px; /* Emphasized logo size */
+    width: auto;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.logo span {
+    display: block;
+    font-size: 2em; /* Logo text size */
+    font-weight: lighter;
+    color: #ffe3de;
+    font-style:italic;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.818); /* Glow effect */
+}
+
+/* Centered Login Form Container */
+.login-form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Light overlay for contrast */
+    padding: 3em;
+    border-radius: 15px; /* Rounded corners */
+    width: 100%;
+    max-width: 400px; /* Adjust max-width */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.login-section h1 {
+    font-size: 2.5em; /* Heading size */
+    color: #a4665e;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #a4665e;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded input fields */
+    font-size: 1em;
+    transition: border 0.3s ease; /* Smooth transition */
+}
+
+.form-group input:focus {
+    border-color: #a4665e; /* Highlight border on focus */
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 1.5em;
+}
+
+.register-link a {
+    color: #a4665e;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #a4665e, #cfa5a1);
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #e9c6c3, #d1a6a0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .logo span {
+        font-size: 1.5em; /* Smaller logo text on mobile */
+    }
+
+    .login-form-container {
+        padding: 1.5em; /* Adjust padding for mobile */
+        max-width: 90%; /* Use more width on mobile */
+    }
+
+    .login-section h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+
+    .btn {
+        width: 100%; /* Full-width button on mobile */
+    }
+}
+
+.footer{
+    background-color: #d6a6a2;
+}

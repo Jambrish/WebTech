@@ -1,0 +1,303 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0e4d7;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Aligns the logo image and text */
+.logo a {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px; /* Spacing between the image and text */
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d1a6a0; /* Adjust color as needed */
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #d1a6a0;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 80vh;
+    background: url('hero-background.jpg') center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    padding: 0.8em 1.5em;
+    background-color: #d1a6a0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b3847d;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    color: #777;
+}
+
+/* Product Showcase Section Styling */
+.product-showcase {
+    padding: 3em 1em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-showcase h2 {
+    font-size: 2.5em;
+    color: #d1a6a0;
+    margin-bottom: 1em;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.product-item {
+    width: 250px;
+    padding: 1em;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.product-item p {
+    font-size: 1em;
+    color: #777;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    width: 100%; /* Ensures the hero section spans the full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.hero-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.slide img {
+    width: 100%; /* Ensure the image stretches to the full width */
+    height: 100%; /* Ensure the image stretches to the full height */
+    object-fit: cover; /* Ensures the image covers the area without stretching or distorting */
+    object-position: center; /* Centers the image */
+    display: block; /* Removes any potential space below the image */
+}
+
+/* Content Styling */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* Custom Logout Modal */
+.logout-modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears on top */
+}
+
+.logout-modal-content {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logout-modal h2 {
+    font-size:medium;
+    color: #63362f;
+    margin-bottom: 1.5em;
+}
+
+.logout-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.logout-modal .btn {
+    padding: 0.8em 1.5em;
+    background-color: #d1a6a0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-modal .btn:hover {
+    background-color: #63362f;
+}
+
+.logout-modal .btn.secondary {
+    background-color: #f0e4d7; /* Lighter color for the cancel button */
+    color: #333;
+}
+
+.logout-modal .btn.secondary:hover {
+    background-color: #d1a6a0;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .cart-icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+

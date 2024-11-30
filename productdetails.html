@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="productdetails.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"> <!-- Home link for the logo -->
+                <img src="Images/logo.png" alt="Secret Glow Logo">
+                <span>Secret Glow</span>
+            </a>
+        </div>
+            <nav class="nav">
+                    <a href="index.html">Home</a> <!-- Redirects to the homepage -->
+                    <a href="productlist.html">Products</a> <!-- Links to products section on homepage -->
+                    <a href="contactus.html">Contact</a> <!-- Links to contact section on homepage -->
+            
+                    <!-- Cart Icon -->
+                    <a href="#" id="cart-icon" class="cart-icon">
+                        <img src="images/cart.png" alt="Cart Icon">
+                    </a>                    
+
+                    <!-- Cart Summary Dropdown -->
+                    <div id="cart-summary" class="cart-summary hidden">
+                        <button class="close-btn" id="close-cart">&times;</button>
+                        <h4>Cart Summary</h4>
+                        <div id="cart-items"></div>
+                        <p id="total-amount"></p>
+                        <a href="checkout.html" class="view-cart-btn">Checkout</a>
+                    </div>                    
+            </nav>
+    </header>
+
+    <div class="back-button-container"> <a href="productlist.html" class="back-button"> 
+        <img src="images/back.png" alt="Back Arrow"> </a> </div>
+
+    <main class="product-details-container">
+        <div class="product-image">
+            <img src="images/Lipstick.png" alt="Lipstick - Super Stay">
+            <div class="hover-image">
+                <img src="images/Lipstick-hover.png" alt="Hover Image - Lipstick">
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="product-image"></div>
+            <h1></h1> <!-- Product Title -->
+            <div class="rating">
+                <span>⭐⭐⭐⭐☆</span>
+                <p>(120 reviews)</p>
+            </div>
+            <p class="product-description"></p> <!-- Product Description -->
+            <p class="product-shade"></p> <!-- Shade Information -->
+            <p class="product-stock"></p>
+            <p class="product-ingredients"><strong>Ingredients:</strong> <span></span></p> <!-- Ingredients Section -->
+            <p class="product-features"><strong>Features:</strong> <span></span></p> <!-- Features Section -->
+        </div>
+    </main>
+      
+    <!-- Notification that appears after adding an item to the cart -->
+    <div id="notification" class="notification hidden">
+        Item added to the cart!
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Secret Glow. All rights reserved.</p>
+    </footer>
+
+    <script src="productdetails.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Glow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+    
+</head> 
+    <body>
+        <!-- Header Section with Logo and Navigation -->
+            <header class="header">
+                <div class="logo">
+                    <a href="index.html"> <!-- Home link for the logo -->
+                        <img src="Images/logo.png" alt="Secret Glow Logo">
+                        <span>Secret Glow</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="productlist.html">Products</a> <!-- Link to productlist.html -->
+                    <a href="contactus.html">Contact</a>
+                    <a href="#" onclick="openLogoutModal();">Logout</a>
+                </nav>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-slider">
+                    <div class="slide active">
+                        <img src="Images/model1.png" alt="model1">
+                    </div>
+                    <div class="slide active">
+                        <img src="Images/model2.png" alt="model2">
+                    </div>
+                    <div class="slide active">
+                        <img src="Images/model3.png" alt="model3">
+                    </div>
+                    <div class="slide active">
+                        <img src="Images/model4.png" alt="model4">
+                    </div>
+                    <div class="slide active">
+                        <img src="Images/model5.png" alt="model5">
+                    </div>
+                    <div class="slide active">
+                        <img src="Images/model6.png" alt="model6">
+                    </div>
+                    <div class="slide active">
+                        <img src="Images/model7.png" alt="model7">
+                    </div>
+                    <div class="slide active">
+                        <img src="Images/model8.png" alt="model8">
+                    </div>
+                
+
+                <div class="hero-content">
+                    <h1>Unleash Your Inner Beauty</h1>
+                    <p>Explore our exclusive range of luxurious makeup products. Perfect shades, lasting impressions.</p>
+                    <a href="productlist.html" class="btn primary">Shop Now</a>
+                </div>
+            </section>
+
+                <!-- Showcase Section for Featured Products -->
+                <section id="products" class="product-showcase">
+                    <h2>Our Featured Products</h2>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <img src="Images/Brush.jpg" alt="Brush">
+                            <h3>Brush</h3>
+                            <p>Get a flawless finish with our premium makeup brush—soft, durable, and perfect for any look.</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/foundation.png" alt="Foundation">
+                            <h3>Perfect Finish Foundation</h3>
+                            <p>Seamless blend and natural coverage for all skin types.</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/Eyeshadow.png" alt="Eyeshadow Palette">
+                            <h3>Glam Eyeshadow Palette</h3>
+                            <p>Vibrant colors to create any look, from subtle to bold.</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/Eyelash.png" alt="Eyelashes Cutter">
+                            <h3>Eyelashes Cutter</h3>
+                            <p>Trim your lashes to the perfect length with our eyelash cutter—easy to use and designed for precision.</p>                       
+                    </div>
+                    <div class="product-item">
+                        <img src="Images/Lipstick.png" alt="Lipstick">
+                        <h3>Lipstick</h3>
+                        <p>Make a bold statement with our lipstick—intense color, creamy texture, and long-lasting wear for a confident look.</p>    
+                    </div>                   
+                    </div>
+                </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <p>&copy; 2024 Secret Glow - All Rights Reserved</p>
+                </footer>   
+                <div id="logoutModal" class="logout-modal">
+                    <div class="logout-modal-content">
+                        <h2>Are you sure you want to log out?</h2>
+                        <div class="logout-modal-buttons">
+                            <button class="btn secondary" onclick="logout()">Yes</button>
+                            <button class="btn secondary" onclick="closeLogoutModal()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    // Open the logout confirmation modal
+                    function openLogoutModal() {
+                        document.getElementById("logoutModal").style.display = "flex";
+                    }
+            
+                    // Close the logout confirmation modal
+                    function closeLogoutModal() {
+                        document.getElementById("logoutModal").style.display = "none";
+                    }
+            
+                    // Logout and redirect to login page
+                    function logout() {
+                        window.location.href = "login.html";
+                    }
+                </script>      
+     </body>
+</html>
+
+
+

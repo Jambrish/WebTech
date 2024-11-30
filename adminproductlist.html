@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Glow Products</title>
+    <link rel="stylesheet" href="productlist.css">
+    <script src="adminproductlist.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="admin.html">
+                <img src="Images/logo.png" alt="Secret Glow Logo">
+                <span>Secret Glow</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="admin.html">Home</a>
+            <a href="adminproductlist.html">Products</a>
+            <a href="admincontactus.html">Contact</a>
+
+            <a href="#" id="cart-icon" class="cart-icon">
+                <img src="images/cart.png" alt="Cart Icon">
+            </a>
+
+            <div id="cart-summary" class="cart-summary hidden">
+                <button class="close-btn" id="close-cart">&times;</button>
+                <h4>Cart Summary</h4>
+                <div id="cart-items"></div>
+                <p id="total-amount"></p>
+                <a href="checkout.html" class="view-cart-btn">Checkout</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="product-filters">
+        <select id="category-select">
+            <option value="all">All Products</option>
+            <option value="face">Face</option>
+            <option value="lips">Lips</option>
+            <option value="blush">Blush</option>
+            <option value="eyes">Eyes</option>
+            <option value="brows">Brows</option>
+        </select>
+        <input type="text" id="search-bar" placeholder="Search for products...">
+        <select id="sort-select">
+            <option value="default">Sort by</option>
+            <option value="price">Price</option>
+            <option value="popularity">Popularity</option>
+            <option value="newest">Newest</option>
+        </select>
+    </section>
+    <section id="product-management">
+        <button id="add-product-btn">Add New Product</button>
+        <form id="product-form" class="hidden">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <textarea id="product-description" placeholder="Product Description" required></textarea>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <input type="number" id="product-stock" placeholder="Stock" required>
+            <input type="text" id="product-shade" placeholder="Shade (Optional)">
+            <input type="text" id="product-image" placeholder="Image URL">
+            <button type="submit" id="save-product-btn">Save</button>
+            <button type="button" id="cancel-product-btn">Cancel</button>
+        </form>
+    </section>
+
+    <section id="products" class="product-showcase">
+        <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <div id="pagination" class="pagination">
+        <button id="prev-page" class="page-btn">Previous</button>
+        <span id="page-info"></span>
+        <button id="next-page" class="page-btn">Next</button>
+    </div>
+
+    <div id="notification" class="notification hidden">
+        Item added to the cart!
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Secret Glow. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

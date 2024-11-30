@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Secret Glow</title>
+    <link rel="stylesheet" href="contactus.css">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="admin.html"> <!-- Home link for the logo -->
+                <img src="Images/logo.png" alt="Secret Glow Logo">
+                <span>Secret Glow</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="admin.html">Home</a>
+            <a href="adminproductlist.html">Products</a> <!-- Link to productlist.html -->
+            <a href="admincontactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Have questions, feedback, or need help? Reach out to us, and we'll get back to you as soon as possible.</p>
+
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Secret Glow. All rights reserved.</p>
+    </footer>
+</body>
+</html>

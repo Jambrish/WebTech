@@ -1,0 +1,197 @@
+[
+    {
+      "name": "Lipstick",
+      "image": "images/Lipstick.png",
+      "description": "Super Stay Lipstick",
+      "shades": "Red, Nude, Peach, Pink",
+      "stock": 10,
+      "price": 299,
+      "popularity": 100,
+      "dateAdded": "2024-01-10"
+    },
+    {
+      "name": "Foundation",
+      "image": "images/foundation.png",
+      "description": "Long-lasting Matte foundation",
+      "shades": "Shade",
+      "stock": 4,
+      "price": 599,
+      "popularity": 250,
+      "dateAdded": "2024-01-15"
+    },
+    {
+      "name": "Eyeshadow",
+      "image": "images/Eyeshadow.png",
+      "description": "Crystal Rose Eyeshadow Palette",
+      "shades": "Shimmer up the matte",
+      "stock": 5,
+      "price": 329,
+      "popularity": 200,
+      "dateAdded": "2024-02-12"
+    },
+    {
+      "name": "Brush",
+      "image": "images/Brush.jpg",
+      "description": "Professional Makeup Brush Set",
+      "shades": "Set",
+      "stock": 8,
+      "price": 769,
+      "popularity": 300,
+      "dateAdded": "2024-03-13"
+    },
+    {
+      "name": "Eyelash",
+      "image": "images/Eyelash.png",
+      "description": "Eyelash Curler",
+      "shades": "Natural",
+      "stock": 9,
+      "price": 199,
+      "popularity": 150,
+      "dateAdded": "2024-05-15"
+    },
+    {
+      "name": "Blush",
+      "image": "cosmetics/blush.jpg",
+      "description": "Color flushed cheeks",
+      "shades": "Cool Toned",
+      "stock": 2,
+      "price": 199,
+      "dateAdded": "2024-05-19"
+    },
+    {
+      "name": "EyeLiner Pencil",
+      "image": "cosmetics/eye liner pencil.jpg",
+      "description": "Easy to glide and highly pigmented",
+      "shades": "Waterproof",
+      "stock": 2,
+      "price": 160,
+      "dateAdded": "2024-07-20"
+    },
+    {
+      "name": "Primer",
+      "image": "cosmetics/ITBlog_makeup-primer.jpg",
+      "description": "Prep your skin by creating a smooth base",
+      "shades": "Hydrating Primer",
+      "stock": 9,
+      "price": 359,
+      "dateAdded": "2024-07-23"
+    },
+    {
+      "name": "Concealer",
+      "image": "https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840026669825-Fenty-Beauty-WERE-EVEN-LONGWEAR-CONCE_082050bcc981f3e863a09dfb31bf67d8e94c340d_1722495990.png",
+      "description": "Long-Wearing, Hydrating, Sensitive Skin",
+      "shades": "Liquid Concealer",
+      "stock": 10,
+      "price": 250,
+      "dateAdded": "2024-07-25"
+    },
+    {
+      "name": "Contour",
+      "image": "cosmetics/contour.jfif",
+      "description": "Highlights your natural bone structure",
+      "shades": "Neutrals, Taupes",
+      "stock": 3,
+      "price": 370,
+      "dateAdded": "2024-08-29"
+    },
+    {
+      "name": "Eyebrow",
+      "image": "cosmetics/Anastasia Beverly Hills.webp",
+      "description": "Outlines and enhance brows",
+      "shades": "Ash brown , Auburn",
+      "stock": 15,
+      "price": 950,
+      "dateAdded": "2024-09-13"
+    },
+    {
+      "name": "Brow Freeze Gel",
+      "image": "cosmetics/Brow Freeze Gel.webp",
+      "description": "Shape, sculpts and set brows with ultimate hold",
+      "shades": "Clear",
+      "stock": 9,
+      "price":  930,
+      "dateAdded": "2024-19-17"
+    },
+    {
+      "name": "BB Foundation",
+      "image": "cosmetics/BB Foundation.webp",
+      "description": "Shape, sculpts and set brows with ultimate hold",
+      "shades": "Fair, Light, Soft, Coffee",
+      "stock": 20,
+      "price":  1100,
+      "dateAdded": "2024-09-20"
+    },
+    {
+      "name": "Bronzer",
+      "image": "cosmetics/Bronzer.webp",
+      "description": "Illuminating powder with radiant finish",
+      "shades": "2-in-1 nude choco",
+      "stock": 12,
+      "price":  1725,
+      "dateAdded": "2024-09-30"
+    },
+    {
+      "name": "Clear Brow Mascara",
+      "image": "cosmetics/Clear Brow Mascara.webp",
+      "description": "Get you eyebrows into shape",
+      "shades": "Clear",
+      "stock": 5,
+      "price": 300,
+      "dateAdded": "2024-10-10"
+    },
+    {
+      "name": "Skin Perfector",
+      "image": "cosmetics/Skin Perfector.webp",
+      "description": "Highligths and radiates your face",
+      "shades": "Nude, Choco",
+      "stock": 15,
+      "price": 2350,
+      "dateAdded": "2024-10-15"
+    },
+    {
+      "name": "Tinted Moisturizer",
+      "image": "cosmetics/Tinted Moisturizer.webp",
+      "description": "lightweight primer and moisturizer",
+      "shades": "Fair, Light, Medium",
+      "stock": 13,
+      "price": 2450,
+      "dateAdded": "2024-10-19"
+    },
+    {
+      "name": "Floral Lip Gloss",
+      "image": "cosmetics/Floral Lip Gloss.webp",
+      "description": "Makes kissable and alluring lips",
+      "shades": "Shimmer",
+      "stock": 4,
+      "price": 1175,
+      "dateAdded": "2024-10-20"
+    },
+    {
+      "name": "Lip Pencil",
+      "image": "cosmetics/Lip Pencil.webp",
+      "description": "Fill in and define lips",
+      "shades": "Timber, Merlot",
+      "stock": 15,
+      "price": 725,
+      "dateAdded": "2024-11-1"
+    },
+    {
+      "name": "Matte Lipstick",
+      "image": "https://image-optimizer-reg.production.sephora-asia.net/images/product_images/zoom_1_Product_840122906343-Rare-Beauty-Kind-Words-Matte-Lipstick_401df56a4bf2ad94d434baf961604904cb7d481f_1726547736.png",
+      "description": "Rare Beauty Kind Words Matte Lipstick",
+      "shades": "Devoted, Lively",
+      "stock": 12,
+      "price": 1450,
+      "dateAdded": "2024-11-8"
+    },
+    {
+      "name": "Powder Blush",
+      "image": "https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122906572-Rare-Beauty-Soft-Pinch-Luminous-Powde_ad530983d4e59f499ebfa729c5abfbd7d6267e3c_1711430662.png",
+      "description": "A liquid-to-powder blush that delivers a soft, diffused finish with a hint of shimmer.",
+      "shades": "Cheer, Love, Joy",
+      "stock": 10,
+      "price": 1800,
+      "dateAdded": "2024-11-11"
+    }
+  ]
+  

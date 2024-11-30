@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
+    <title>Secret Glow Products</title>
+    
+    <!-- External CSS file for styling -->
+    <link rel="stylesheet" href="productlist.css">
+    
+    <!-- External JS file for JavaScript functionality, loaded after the page content -->
+    <script src="productlist.js" defer></script>
+</head>
+<body>
+
+    <!-- Header section containing the logo and navigation menu -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <!-- Logo image and brand name -->
+                <img src="Images/logo.png" alt="Secret Glow Logo">
+                <span>Secret Glow</span>
+            </a>
+        </div>
+
+        <!-- Navigation bar with links to different pages -->
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="productlist.html">Products</a>
+            <a href="contactus.html">Contact</a>
+
+            <!-- Cart icon with dropdown cart summary -->
+            <a href="#" id="cart-icon" class="cart-icon">
+                <img src="images/cart.png" alt="Cart Icon">
+            </a>
+
+            <!-- Cart summary hidden by default, appears when cart icon is clicked -->
+            <div id="cart-summary" class="cart-summary hidden">
+                <button class="close-btn" id="close-cart">&times;</button>
+                <h4>Cart Summary</h4>
+                <!-- Cart items will be dynamically added here -->
+                <div id="cart-items"></div>
+                <!-- Total amount will be displayed here -->
+                <p id="total-amount"></p>
+                <a href="checkout.html" class="view-cart-btn">Checkout</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product filter options: category, search, and sorting -->
+    <section id="product-filters">
+        <select id="category-select">
+            <option value="all">All Products</option>
+            <option value="face">Face</option>
+            <option value="lips">Lips</option>
+            <option value="blush">Blush</option>
+            <option value="eyes">Eyes</option>
+            <option value="brows">Brows</option>
+        </select>
+
+        <!-- Search bar for finding products by name -->
+        <input type="text" id="search-bar" placeholder="Search for products...">
+
+        <!-- Sorting options: price, popularity, newest -->
+        <select id="sort-select">
+            <option value="default">Sort by</option>
+            <option value="price">Price</option>
+            <option value="popularity">Popularity</option>
+            <option value="newest">Newest</option>
+        </select>
+    </section>
+
+    <!-- Product display section -->
+    <section id="products" class="product-showcase">
+        <!-- Product grid container where products will be displayed dynamically -->
+        <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <!-- Pagination controls for navigating through product pages -->
+    <div id="pagination" class="pagination">
+        <button id="prev-page" class="page-btn">Previous</button>
+        <span id="page-info"></span>
+        <button id="next-page" class="page-btn">Next</button>
+    </div>
+
+    <!-- Notification that appears when an item is added to the cart -->
+    <div id="notification" class="notification hidden">
+        Item added to the cart!
+    </div>
+
+    <!-- Footer with copyright information -->
+    <footer class="footer">
+        <p>&copy; 2024 Secret Glow. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
